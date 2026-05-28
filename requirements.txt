@@ -1,0 +1,6 @@
+javascript
+ollama
+pydantic
+langchain
+langchain-community
+langchain-ollama
