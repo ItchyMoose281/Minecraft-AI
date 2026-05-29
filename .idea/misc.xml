@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.14 (MinecraftAI)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14 (MinecraftAI)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14 (Minecraft-AI)" project-jdk-type="Python SDK" />
 </project>
