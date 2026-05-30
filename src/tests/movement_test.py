@@ -5,14 +5,12 @@ from src.bots.bot_manager import MineflayerManager
 mineflayer = require('mineflayer')
 pathfinder = require('mineflayer-pathfinder')
 
-manager = MineflayerManager()
-manager.initialize_bots()
-
-bot = manager.botlist['1']
+manager = MineflayerManager(name='1')
+bot = manager.bot
 
 @Once(bot, 'login')
 def on_login(this):
-    manager.setMovements()
+    pass
 
 RANGE_GOAL = 1
 
@@ -26,5 +24,4 @@ def handleMsg(sender, message, *args):
             bot.pathfinder.setGoal(pathfinder.goals.GoalNear(xpos, ypos, zpos, RANGE_GOAL))
 
         except ValueError:
-            # This handles cases where chat messages aren't "X, Z" numbers
-            print(f"Ignored chat message (not valid coordinates): {message}")
+            pass
